@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  font-family: "Outfit", sans-serif;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: hsl(217, 54%, 11%);
+  height: 100vh;
+}
+
+.component {
+  box-shadow: 15px 15px 20px rgba(hsl(217, 54%, 11%), 20px);
+  padding: 20px;
+  border-radius: 15px;
+  background-color: hsl(216, 50%, 16%);
+  width: 300px;
+  margin: auto;
+
+  &__img {
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+
+    &--1 {
+      background-color: hsl(178, 100%, 50%);
+      border-radius: 15px;
+    }
+  }
+
+  &__description {
+    &--1 {
+    }
+    &--2 {
+      color: hsl(215, 51%, 70%);
+    }
+    &--4 {
+      text-decoration: none;
+      color: hsl(0, 0%, 100%);
+
+      &:hover {
+        cursor: pointer;
+        color: hsl(178, 100%, 50%);
+      }
+    }
+    &--images {
+      padding-right: 5px;
+      align-content: center;
+    }
+
+    &--images2 {
+      padding-right: 5px;
+      align-content: center;
+      padding-left: 28%;
+    }
+
+    &--head {
+      padding-bottom: 15px;
+      font-weight: 600;
+      color: hsl(0, 0%, 100%);
+
+      &:hover {
+        cursor: pointer;
+        color: hsl(178, 100%, 50%);
+      }
+    }
+    &--text {
+      color: hsl(215, 51%, 70%);
+      padding-bottom: 15px;
+    }
+    &--price {
+      display: flex;
+      flex-direction: row;
+      color: hsl(178, 100%, 50%);
+      align-content: center;
+      padding-bottom: 15px;
+    }
+
+    &--price1 {
+    }
+
+    &--author {
+      //align-content: center;
+      //padding-top: 10px;
+      height: 37px;
+      display: flex;
+      align-items: center;
+      padding-top: 25px;
+      // padding-bottom: 15px;
+      border-top: solid 1px hsl(215, 51%, 70%);
+    }
+
+    &--3 {
+      text-decoration: none;
+      padding-left: 11px;
+      color: hsl(215, 51%, 70%);
+    }
+
+    &--authorimg {
+      height: inherit;
+      border: white 1px solid;
+      border-radius: 50%;
+    }
+  }
+}
